@@ -1,0 +1,86 @@
+:root{
+    --color-connexion: rgba(30, 144, 255, 1);
+    --color-connexion2: rgba(30, 144, 255, 0.5);
+    --font-connexion:"comic sans ms", verdana, sans-serif;
+    --font-connexion2:"forte", verdana, sans-serif;
+}
+@keyframes wave{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-25px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-family: var(--font-connexion);
+    font-size: 12px;
+}
+#app_container{
+    position: relative;
+    
+    width: 30%;
+    min-width: 250px;
+    margin: 5% auto 0px auto;
+}
+#app_logo{
+    text-align: center;
+    font-family: var(--font-connexion2);
+    color: var(--color-connexion);
+    font-size: 40pt;
+    animation: wave 5s ease-in-out infinite;
+}
+#app_logo div{
+    font-style: italic;
+    font-size: 12pt;
+    color: black;
+   white-space: nowrap;
+}
+fieldset{
+    border: none;
+    border-top: 3px solid var(--color-connexion);
+    /* border-color: var(--font-connexion); */
+}
+legend{
+    font-size: 14pt;
+    font-weight: bold;
+}
+.field input{
+    width: 100%;
+    height: 35px;
+    padding-left: 10px;
+    border: 2px solid var(--color-connexion);
+    border-radius: 30px;
+    font-size: 12pt;
+    margin: 8px 0px;
+}
+.field label{
+    position: relative;
+    left: 15px;
+}
+.buttons{
+    text-align: right;
+}
+.buttons input{
+    margin: 2px;
+    padding: 10px 10px;
+    font-weight: bold;
+    border: 2px solid var(--color-connexion);
+    color: white;
+    background-color: var(--color-connexion);
+    border-radius: 15px 0px 15px 0px;
+    cursor: pointer;
+}
+  
+
+.buttons input:hover{
+    color: black;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+}

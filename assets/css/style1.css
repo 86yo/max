@@ -1,0 +1,84 @@
+:root{
+    --color-app: rgba(30, 144, 255, 1);
+    --color-app2: rgba(30, 144, 255, 0.5);
+    --font-app:"comic sans ms", verdana, sans-serif;
+    --font-app2:"forte", verdana, sans-serif;
+}
+
+.container center table{
+    background-color: white;
+ font-size: 15px;
+ width: 100%;
+ border: 3px solid black;
+ border-radius: 15px;
+}
+.container center table tr th{
+    font-weight: 600;
+   
+    border: 3px solid black;
+    text-align: center;
+}
+.container center table tr td{
+    
+    border: 3px solid black;
+    text-align: center;
+}
+.form li{
+    width:500px ;
+    background-color: rgb(252, 252, 251);
+    font-size: 50px;
+}
+ 
+.lien{
+    width: 350px;
+height: 75px;
+background-color: white;
+color: black;
+margin: 35px 32px;
+text-align: center;
+ 
+font-weight: 900;
+border-radius: 15px;
+}
+.lien:hover{
+    background-color: black;
+    color: bisque;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+    
+}
+td form button{
+    
+    background-color: transparent;
+    color: rgb(77, 160, 205);
+   cursor: pointer;
+   border: none;
+}
+form .field input,
+form .field select,
+form .field textarea
+{
+  width: 100%;
+  height: 35px;
+  padding-left: 10px;
+  margin: 5px 0px;
+  font-size: 13pt;
+  border: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.6);
+}
+form .button input{
+    color: white;
+    background-color: var(--color-app);
+    margin: 5px 85%;
+    border: none;
+    white-space: nowrap;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 8px;
+    
+      
+  }
